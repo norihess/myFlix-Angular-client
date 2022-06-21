@@ -1,0 +1,42 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title class="login-dialog-title">Login into your account</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="login-dialog-content">
+    <form>
+      <mat-form-field>
+        <input matInput [(ngModel)]="userData.Username" placeholder="Username" type="text" name="Username" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="userData.Password" placeholder="Password" type="password" name="Password" required>
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+
+    <button mat-raised-button (click)="login()" color="primary">
+      Login
+    </button>
+</mat-card>
+
+
+
+<!-- 
+<p>login-view works!</p>
+
+<form>
+	<label>Username</label>
+	<input
+	matInput
+	[(ngModel)] = "userCredentials.Username"
+	name="Username" 
+	type="text"/>
+
+
+	<label>Passowrd</label>
+	<input
+[(ngModel)] = "userCredentials.Password"
+name="Password" 
+type="password"/>
+
+<button (click)="login()" >Login</button>
+</form> -->
